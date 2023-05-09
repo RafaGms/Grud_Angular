@@ -9,13 +9,17 @@ import { Client } from '../components/client';
 })
 export class ClientService {
 
+  url ="http://localhost:3000/clients";
+
   constructor(private http: HttpClient) { }
 
   getClient():Observable <Client[]>{
-    let url ="http://localhost:3000/clients";
 
-    return this.http.get<Client[]>(url) //metodo GET do HTTP para requisição
+    return this.http.get<Client[]>(this.url) //metodo GET do HTTP para requisição
   }
 
+  save(client:Client):Observable <Client>{
+    return this.http.post<Client>(this.url, client); //metodo post do HTTP para salvar
+  }
 
 }
