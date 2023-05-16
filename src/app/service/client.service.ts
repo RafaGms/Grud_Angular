@@ -22,4 +22,11 @@ export class ClientService {
     return this.http.post<Client>(this.url, client); //metodo post do HTTP para salvar
   }
 
+  remove(client:Client):Observable <void>{
+    return this.http.delete<void>(`${this.url}/${client.id}`); //metodo delete do HTTP para deletar
+  }
+  update(client:Client):Observable <Client>{
+    return this.http.put<Client>(`${this.url}/${client.id}`,client); //metodo delete do HTTP para deletar
+  }
+
 }

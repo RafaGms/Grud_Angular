@@ -2,28 +2,8 @@
   "clients": [
     {
       "id": 1,
-      "name": "Maria Silva",
-      "email": "maria.silva@gmail.com"
-    },
-    {
-      "id": 2,
-      "name": "Jose Antunes",
-      "email": "jose.antunes@gmail.com"
-    },
-    {
-      "id": 3,
-      "name": "Fernando Souza",
-      "email": "fernando.souza@gmail.com"
-    },
-    {
-      "id": 4,
-      "name": "Rafa",
-      "email": "rafael.gomes@gmail.com"
-    },
-    {
-      "id": 5,
-      "name": "gold",
-      "email": "NoFimDeSemana@vava.com"
+      "name": "sergio donizete ",
+      "email": "rafael@gmail.com"
     }
   ]
 }
